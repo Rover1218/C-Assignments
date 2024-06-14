@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "CIRCLE.C": "cpp",
+        "stdio.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
