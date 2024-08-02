@@ -20,6 +20,5 @@ int main()
     printf("Enter the number of Fibonacci numbers to print: ");
     scanf("%d", &n);
     print_fibonacci(n);
-
     return 0;
 }
