@@ -11,7 +11,6 @@ void sortedDeletion(int arr[], int size, int target)
 {
     for (int i = target; i < size - 1; i++)
     {
-        printf("%d\n", i);
         arr[i] = arr[i + 1];
     }
 }
