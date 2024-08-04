@@ -7,7 +7,13 @@ void display(int arr[], int n)
     }
     printf("\n");
 }
-
+void sortedDeletion(int arr[], int size, int target)
+{
+    for (int i = target; i < size - 1; i++)
+    {
+        arr[i] = arr[i + 1];
+    }
+}
 int main()
 {
     int f, g, h;
@@ -19,13 +25,13 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    printf("Enter the elemnt to insert: ");
-    scanf("%d", &g);
+    display(arr, f);
     printf("Enter the target element: ");
     scanf("%d", &h);
     if (f > h)
     {
-        sortedDeletion(arr, f, g, h);
+        sortedDeletion(arr, f, h);
+        f -= 1;
         display(arr, f);
     }
     else

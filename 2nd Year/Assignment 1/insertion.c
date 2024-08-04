@@ -7,7 +7,7 @@ void display(int arr[], int n)
     }
     printf("\n");
 }
-int sortedInsertion(int arr[], int size, int element, int target)
+void sortedInsertion(int arr[], int size, int element, int target)
 {
     for (int i = size - 1; i >= target; i--)
     {
