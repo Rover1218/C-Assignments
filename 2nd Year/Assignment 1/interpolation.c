@@ -16,7 +16,7 @@ int interpolationSearch(int arr[], int lo, int hi, int x)
 }
 int main()
 {
-    int *ptr, n1, x, n;
+    int n1, x;
     printf("Enter size of array: ");
     scanf("%d", &n1);
     int a[n1];
