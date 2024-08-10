@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*void bubblesort1(int *arr, int n)
+void bubblesort1(int *arr, int n)
 {
     int *ptr1, *ptr2, temp;
     int issorted = 0;
@@ -25,7 +25,7 @@
             return;
         }
     }
-}*/
+}
 int main()
 {
     int n1;
@@ -42,23 +42,7 @@ int main()
     {
         printf("%d ", a[i]);
     }
-    int n = sizeof(a) / sizeof(a[0]);
-    // bubblesort1(a, n);
-    int *ptr1, *ptr2, temp;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            ptr1 = a + j;
-            ptr2 = a + j + 1;
-            if (*ptr1 > *ptr2)
-            {
-                temp = *ptr1;
-                *ptr1 = *ptr2;
-                *ptr2 = temp;
-            }
-        }
-    }
+    bubblesort1(a, n1);
     printf("Sorted Array: ");
     for (int i = 0; i < n1; i++)
     {
