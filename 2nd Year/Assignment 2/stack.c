@@ -96,7 +96,7 @@ int main()
             printf("%d has been popped from the stack\n", pop(sp));
             break;
         case 3:
-            for (int i = 0; i <= sp->top + 1; i++)
+            for (int i = 1; i <= sp->top + 1; i++)
             {
                 printf("The value at index %d is %d\n", i, peek(sp, i));
             }
