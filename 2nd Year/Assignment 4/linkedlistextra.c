@@ -31,6 +31,12 @@ void insertAfter(struct Node **head, int target, int data)
         printf("Target %d not found.\n", target);
     }
 }
+void insertAtBeginning(struct Node **head, int data)
+{
+    struct Node *newNode = createNode(data);
+    newNode->next = *head;
+    *head = newNode;
+}
 void insertBefore(struct Node **head, int target, int data)
 {
     if (*head == NULL)
@@ -184,59 +190,66 @@ void menu()
     while (1)
     {
         printf("\nMenu:\n");
-        printf("1. Insert after a target element\n");
-        printf("2. Insert before a target element\n");
-        printf("3. Delete after a target element\n");
-        printf("4. Delete before a target element\n");
-        printf("5. Sort list\n");
-        printf("6. Reverse list\n");
-        printf("7. Display list\n");
-        printf("8. Exit\n");
+        printf("1. Insert element at the beginning\n");
+        printf("2. Insert after a target element\n");
+        printf("3. Insert before a target element\n");
+        printf("4. Delete after a target element\n");
+        printf("5. Delete before a target element\n");
+        printf("6. Sort list\n");
+        printf("7. Reverse list\n");
+        printf("8. Display list\n");
+        printf("9. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
         switch (choice)
         {
         case 1:
+            printf("Enter element to insert at the beginning: ");
+            scanf("%d", &data);
+            insertAtBeginning(&head, data);
+            break;
+        case 2:
             printf("Enter target element: ");
             scanf("%d", &target);
             printf("Enter element to insert after target: ");
             scanf("%d", &data);
             insertAfter(&head, target, data);
             break;
-        case 2:
+        case 3:
             printf("Enter target element: ");
             scanf("%d", &target);
             printf("Enter element to insert before target: ");
             scanf("%d", &data);
             insertBefore(&head, target, data);
             break;
-        case 3:
+        case 4:
             printf("Enter target element: ");
             scanf("%d", &target);
             deleteAfter(&head, target);
             break;
-        case 4:
+        case 5:
             printf("Enter target element: ");
             scanf("%d", &target);
             deleteBefore(&head, target);
             break;
-        case 5:
+        case 6:
             sortList(&head);
             break;
-        case 6:
+        case 7:
             reverseList(&head);
             break;
-        case 7:
+        case 8:
             displayList(head);
             break;
-        case 8:
+        case 9:
             exit(0);
         default:
             printf("Invalid choice, please try again.\n");
         }
     }
 }
+
 int main()
 {
     menu();
