@@ -1,0 +1,12 @@
+
+# Ignore all .exe files
+*.exe
+
+# Ignore object files and other compiled outputs
+*.o
+*.obj
+*.out
+
+# Ignore debug files
+*.pdb
+*.ilk

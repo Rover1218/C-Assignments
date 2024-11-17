@@ -31,7 +31,6 @@ void sort(int *arr, int n)
         issorted = 1;
         for (int j = 0; j < n - i - 1; j++)
         {
-            issorted = 1;
             ptr1 = arr + j;
             ptr2 = arr + j + 1;
             if (*ptr1 > *ptr2)
