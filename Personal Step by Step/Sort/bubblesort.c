@@ -5,7 +5,6 @@ void bubblesort1(int *arr, int n)
     int issorted = 0;
     for (int i = 0; i < n; i++)
     {
-        printf("\nPass Number: %d\n", i);
         issorted = 1;
         for (int j = 0; j < n - i - 1; j++)
         {
