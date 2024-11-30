@@ -1,35 +1,32 @@
+# 🎯 Sorting Algorithms Comparison
 
-# Sorting Algorithms Comparison
+<div align="center">
+  <img src="https://img.shields.io/badge/Complexity-Analysis-blue"/>
+  <img src="https://img.shields.io-badge/Algorithms-Sorting-green"/>
+</div>
+
+---
 
 ## 🔄 Bubble Sort
-### ✅ Advantages:
-- Simple to understand and implement
-- Efficient for small datasets or nearly sorted data
+<details>
+<summary>View Details</summary>
 
-### ❌ Disadvantages:
-- Inefficient for large datasets
-- High number of comparisons and swaps
+### ✅ Advantages
+- 📌 Simple to understand and implement
+- 📌 Efficient for small datasets or nearly sorted data
 
-### ⏱️ Complexity:
-- Best: O(n)
-- Average: O(n^2)
-- Worst: O(n^2)
-- Space Complexity: O(1)
+### ❌ Disadvantages
+- 📌 Inefficient for large datasets
+- 📌 High number of comparisons and swaps
 
-## 🔄 Heap Sort
-### ✅ Advantages:
-- Efficient for large datasets
-- In-place sorting algorithm
+### ⏱️ Time & Space Complexity
+| Case    | Time      | Space |
+|---------|-----------|--------|
+| Best    | O(n)      | O(1)   |
+| Average | O(n²)     | O(1)   |
+| Worst   | O(n²)     | O(1)   |
 
-### ❌ Disadvantages:
-- Not stable
-- More complex to implement
-
-### ⏱️ Complexity:
-- Best: O(n log n)
-- Average: O(n log n)
-- Worst: O(n log n)
-- Space Complexity: O(1)
+</details>
 
 ## 🔄 Insertion Sort
 ### ✅ Advantages:
@@ -90,3 +87,18 @@
 - Average: O(n^2)
 - Worst: O(n^2)
 - Space Complexity: O(1)
+
+## 📊 Visual Comparison
+
+| Algorithm | Best Case | Average Case | Worst Case | Space | Stability |
+|-----------|-----------|--------------|------------|-------|-----------|
+| Bubble    | O(n)      | O(n²)        | O(n²)      | O(1)  | ✅        |
+| Insertion | O(n)      | O(n²)        | O(n²)      | O(1)  | ✅        |
+| Merge     | O(n log n)| O(n log n)   | O(n log n) | O(n)  | ✅        |
+| Quick     | O(n log n)| O(n log n)   | O(n²)      | O(log n)| ❌     |
+| Selection | O(n²)     | O(n²)        | O(n²)      | O(1)  | ❌        |
+
+---
+<div align="center">
+  <i>💡 Choose the right algorithm based on your specific use case!</i>
+</div>
