@@ -7,9 +7,8 @@
 
 ---
 
-## 🔄 Bubble Sort
 <details>
-<summary>View Details</summary>
+<summary><h2>🔄 Bubble Sort</h2></summary>
 
 ### ✅ Advantages
 - 📌 Simple to understand and implement
@@ -19,76 +18,107 @@
 - 📌 Inefficient for large datasets
 - 📌 High number of comparisons and swaps
 
-### ⏱️ Time & Space Complexity
+<details>
+<summary>⏱️ View Time & Space Complexity</summary>
+
 | Case    | Time      | Space |
 |---------|-----------|--------|
 | Best    | O(n)      | O(1)   |
 | Average | O(n²)     | O(1)   |
 | Worst   | O(n²)     | O(1)   |
-
+</details>
 </details>
 
-## 🔄 Insertion Sort
-### ✅ Advantages:
-- Simple to implement
-- Efficient for small datasets or nearly sorted data
-- Stable sort
+<details>
+<summary><h2>🔄 Insertion Sort</h2></summary>
 
-### ❌ Disadvantages:
-- Inefficient for large datasets
+### ✅ Advantages
+- 📌 Simple to implement
+- 📌 Efficient for small datasets or nearly sorted data
+- 📌 Stable sort
 
-### ⏱️ Complexity:
-- Best: O(n)
-- Average: O(n^2)
-- Worst: O(n^2)
-- Space Complexity: O(1)
+### ❌ Disadvantages
+- 📌 Inefficient for large datasets
 
-## 🔄 Merge Sort
-### ✅ Advantages:
-- Efficient for large datasets
-- Stable sort
+<details>
+<summary>⏱️ View Complexity</summary>
 
-### ❌ Disadvantages:
-- Requires additional memory
-- More complex to implement
+| Case    | Time      | Space |
+|---------|-----------|--------|
+| Best    | O(n)      | O(1)   |
+| Average | O(n²)     | O(1)   |
+| Worst   | O(n²)     | O(1)   |
+</details>
+</details>
 
-### ⏱️ Complexity:
-- Best: O(n log n)
-- Average: O(n log n)
-- Worst: O(n log n)
-- Space Complexity: O(n)
+<details>
+<summary><h2>🔄 Merge Sort</h2></summary>
 
-## 🔄 Quick Sort
-### ✅ Advantages:
-- Efficient for large datasets
-- In-place sorting algorithm
+### ✅ Advantages
+- 📌 Efficient for large datasets
+- 📌 Stable sort
 
-### ❌ Disadvantages:
-- Not stable
-- Worst-case performance can be poor
+### ❌ Disadvantages
+- 📌 Requires additional memory
+- 📌 More complex to implement
 
-### ⏱️ Complexity:
-- Best: O(n log n)
-- Average: O(n log n)
-- Worst: O(n^2)
-- Space Complexity: O(log n)
+<details>
+<summary>⏱️ View Complexity</summary>
 
-## 🔄 Selection Sort
-### ✅ Advantages:
-- Simple to implement
-- Performs well on small datasets
+| Case    | Time        | Space |
+|---------|-------------|--------|
+| Best    | O(n log n)  | O(n)   |
+| Average | O(n log n)  | O(n)   |
+| Worst   | O(n log n)  | O(n)   |
+</details>
+</details>
 
-### ❌ Disadvantages:
-- Inefficient for large datasets
-- Not stable
+<details>
+<summary><h2>🔄 Quick Sort</h2></summary>
 
-### ⏱️ Complexity:
-- Best: O(n^2)
-- Average: O(n^2)
-- Worst: O(n^2)
-- Space Complexity: O(1)
+### ✅ Advantages
+- 📌 Efficient for large datasets
+- 📌 In-place sorting algorithm
 
-## 📊 Visual Comparison
+### ❌ Disadvantages
+- 📌 Not stable
+- 📌 Worst-case performance can be poor
+
+<details>
+<summary>⏱️ View Complexity</summary>
+
+| Case    | Time        | Space    |
+|---------|-------------|----------|
+| Best    | O(n log n)  | O(log n) |
+| Average | O(n log n)  | O(log n) |
+| Worst   | O(n²)       | O(log n) |
+</details>
+</details>
+
+<details>
+<summary><h2>🔄 Selection Sort</h2></summary>
+
+### ✅ Advantages
+- 📌 Simple to implement
+- 📌 Performs well on small datasets
+
+### ❌ Disadvantages
+- 📌 Inefficient for large datasets
+- 📌 Not stable
+
+<details>
+<summary>⏱️ View Complexity</summary>
+
+| Case    | Time      | Space |
+|---------|-----------|--------|
+| Best    | O(n²)     | O(1)   |
+| Average | O(n²)     | O(1)   |
+| Worst   | O(n²)     | O(1)   |
+</details>
+</details>
+
+<details>
+<summary><h2>📊 Visual Comparison Chart</h2></summary>
 
 | Algorithm | Best Case | Average Case | Worst Case | Space | Stability |
 |-----------|-----------|--------------|------------|-------|-----------|
@@ -97,6 +127,7 @@
 | Merge     | O(n log n)| O(n log n)   | O(n log n) | O(n)  | ✅        |
 | Quick     | O(n log n)| O(n log n)   | O(n²)      | O(log n)| ❌     |
 | Selection | O(n²)     | O(n²)        | O(n²)      | O(1)  | ❌        |
+</details>
 
 ---
 <div align="center">
