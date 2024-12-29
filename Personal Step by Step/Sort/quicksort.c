@@ -69,3 +69,59 @@ int main()
     display(arr, a);
     return 0;
 }
+
+// Output
+// Enter size of array: 5
+// Enter element 1: 5
+// Enter element 2: 1
+// Enter element 3: 3
+// Enter element 4: 2
+// Enter element 5: 4
+// Array before sorting: 5 1 3 2 4
+// low: 0 high: 4
+// pivot: 5
+// i: 1 j: 4
+// 1 <= 5
+// i: 2 j: 4
+// 3 <= 5
+// i: 3 j: 4
+// 2 <= 5
+// i: 4 j: 4
+// 4 <= 5
+// i: 5 j: 4
+// 5<4
+// temp=5
+// 5=4
+// 4=5
+// 1st partition: 4 1 3 2 5
+// p=4
+// high: 4 p=3
+// low 5 high 4
+// 2nd
+// low: 0 high: 3
+// pivot 4
+// i: 1 j: 3
+// 1 <= 4
+// i: 2 j: 3
+// 3 <= 4
+// i: 3 j: 3
+// 2 <= 4
+// i: 4 j: 3
+// 4<3
+// temp=4
+// 4=2
+// 2=4
+// 2nd partition: 2 1 3 4 5
+// p=3
+// low: 0 high: 2
+// pivot 2
+// i: 1 j: 2
+// 1 <= 2
+// i: 2 j: 2
+// 3 > 2
+// i: 2 j: 1
+// 2<1
+// temp=2
+// 2=1
+// 1=2
+// 3rd partition: 1 2 3 4 5
