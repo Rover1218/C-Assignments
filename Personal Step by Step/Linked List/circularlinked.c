@@ -127,7 +127,7 @@ void deleteFromEnd(Node **tail)
 {
     if (*tail == NULL)
     {
-        printf("List is empty. Cannot delete.\n");
+        printf("List is empty. Can't delete.\n");
         return;
     }
 
