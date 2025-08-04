@@ -139,7 +139,7 @@ void deleteFromEnd(Node **tail)
     }
     else
     {
-        while (current->next != *tail->next)
+        while (current->next != (*tail)->next)
         {
             prev = current;
             current = current->next;
